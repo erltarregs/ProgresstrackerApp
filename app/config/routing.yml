@@ -1,3 +1,7 @@
+qi_prog_track_prog_tracker_tasks:
+    resource: "@QiProgTrackProgTrackerBundle/Controller/TasksController.php"
+    type:     annotation
+
 symfony_cebu_pages:
     resource: "@SymfonyCebuPagesBundle/Controller/"
     type:     annotation
