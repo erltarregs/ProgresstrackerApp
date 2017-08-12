@@ -2,8 +2,9 @@
 
 {% block body %}
     <h1>Tasks list</h1>
+            <a class="btn btn-primary" href="{{ path('tasks_new') }}">Create a new task</a>
 
-    <table>
+    <table class="table table-striped table-hover">
         <thead>
             <tr>
                 <th>Id</th>
@@ -19,23 +20,17 @@
                 <td>{{ task.tasksDescription }}</td>
                 <td>{{ task.status }}</td>
                 <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('tasks_show', { 'id': task.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('tasks_edit', { 'id': task.id }) }}">edit</a>
-                        </li>
-                    </ul>
+                    <a class="btn btn-success" href="{{ path('tasks_show', { 'id': task.id }) }}">Show</a>
+                    <a class="btn btn-info" href="{{ path('tasks_edit', { 'id': task.id }) }}">Edit</a>
+                    <a class="btn btn-danger" href="{{ path('tasks_edit', { 'id': task.id }) }}">Add Progress</a>
+
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
+<div>
+    {{tasks|length}} Records found... &nbsp;<br>
+</div>
 
-    <ul>
-        <li>
-            <a href="{{ path('tasks_new') }}">Create a new task</a>
-        </li>
-    </ul>
 {% endblock %}
