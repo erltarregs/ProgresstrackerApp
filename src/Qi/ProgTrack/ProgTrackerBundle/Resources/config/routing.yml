@@ -1,0 +1,3 @@
+qi_prog_track_prog_tracker_homepage:
+    path:     /
+    defaults: { _controller: QiProgTrackProgTrackerBundle:Default:index }
