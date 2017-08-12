@@ -5,7 +5,8 @@ namespace Qi\ProgTrack\ProgTrackerBundle\Controller;
 use Qi\ProgTrack\ProgTrackerBundle\Entity\Tasks;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Task controller.
@@ -39,7 +40,7 @@ class TasksController extends Controller
      */
     public function newAction(Request $request)
     {
-        $task = new Task();
+        $task = new Tasks();
         $form = $this->createForm('Qi\ProgTrack\ProgTrackerBundle\Form\TasksType', $task);
         $form->handleRequest($request);
 
