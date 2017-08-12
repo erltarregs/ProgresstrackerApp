@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new SymfonyCebu\UserBundle\SymfonyCebuUserBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new SymfonyCebu\PagesBundle\SymfonyCebuPagesBundle(),
+	    new Qi\ProgTrack\ProgTrackerBundle\QiProgTrackProgTrackerBundle(), 
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
