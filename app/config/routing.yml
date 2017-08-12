@@ -1,8 +1,15 @@
-qi_prog_track_prog_tracker:
-    resource: "@QiProgTrackProgTrackerBundle/Controller/"
-    prefix:   /Pt
-    type: annotation
+symfony_cebu_pages:
+    resource: "@SymfonyCebuPagesBundle/Controller/"
+    type:     annotation
+    prefix:   /pages
+
+app_user:
+    resource: "@SymfonyCebuUserBundle/Resources/config/routing.yml"
+    prefix:   /user
 
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

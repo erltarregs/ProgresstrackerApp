@@ -12,10 +12,22 @@ class DefaultController extends Controller
      * @Route("/", name="homepage")
      */
     public function indexAction(Request $request)
-    {
+    { 
         // replace this example code with whatever you need
         return $this->render('default/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
-    }
+    } 
+
+    /**
+     *
+     * @Route("/articles/{slug}", name="subpages")
+     */
+    public function pagesAction($slug)
+    { 
+        // replace this example code with whatever you need
+        return $this->render('default/index.html.twig', [
+            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+        ]);
+    } 
 }

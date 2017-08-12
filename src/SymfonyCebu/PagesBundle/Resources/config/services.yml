@@ -1,0 +1,4 @@
+services:
+#    symfony_cebu_pages.example:
+#        class: SymfonyCebu\PagesBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
