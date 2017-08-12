@@ -13,3 +13,8 @@ app:
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+qi_prog_track_prog_tracker: 
+    resource: "@QiProgTrackProgTrackerBundle/Controller/"
+    type: annotation
+    prefix: /home
